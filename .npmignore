@@ -1,0 +1,8 @@
+src/stories/
+.storybook/
+*.test.tsx
+*.spec.tsx
+*.md
+vite.config.ts
+tsconfig.json
+node_modules/
