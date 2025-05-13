@@ -1,7 +1,8 @@
 export type HeaderProps = {
-    logoURL: string,
     siteTitle: string,
-    loginModifier: 0,
+    loginModifier: boolean,
+    loginName: string,
+    registerName: string,
     registerAction: ((...args : unknown[]) => void) | undefined
     loginAction: ((...args : unknown[]) => void) | undefined
     isLoggedIn: boolean,

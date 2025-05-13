@@ -1,0 +1,11 @@
+.AccountButton {
+    all: unset;
+    display: block;
+    font-size: 1.125rem;
+    padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+    background-color: #B5B5B5;
+}
+
+.AccountButton:hover {
+    background-color: #9f9f9f;
+}

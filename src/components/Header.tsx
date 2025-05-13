@@ -1,28 +1,24 @@
 import HeaderTitle from "./HeaderTitle.tsx";
-import HeaderLogo from "./HeaderLogo.tsx";
 import Button from "./Button.tsx";
 import AccountButton from "./AccountButton.tsx";
-
 import type { HeaderProps } from "../types/Header.types.ts";
+import "../styles/Header.styles.css";
 
-export default function Header({ logoURL, siteTitle, loginModifier, registerAction, loginAction, isLoggedIn, accountClick, title } : HeaderProps) {
+export default function Header({ siteTitle, loginModifier, registerAction, loginAction, registerName, loginName, isLoggedIn, accountClick, title } : HeaderProps) {
     return (
-            <header>
+        <header className={ "Header" }>
             <div>
-                <div>
-                    { logoURL ? <HeaderLogo URL={ `${logoURL}` } alt={ `${ siteTitle ? siteTitle : "" }` }/> : null }
-                    { siteTitle ? <HeaderTitle title={ siteTitle }></HeaderTitle> : null }
-                </div>
-                <div>
-                    { loginModifier === 0 ?
-                        ( isLoggedIn ?
-                            <>
-                                <Button buttonText={"Register"} action={ registerAction }></Button>
-                                <Button buttonText={"Login"} action={ loginAction }></Button>
-                            </> :
-                            <AccountButton action={ accountClick } title={ title }></AccountButton>) : null
-                    }
-                </div>
+                { siteTitle ? <HeaderTitle title={ siteTitle }></HeaderTitle> : null }
+            </div>
+            <div className={ "HeaderButtonContainer" }>
+                { loginModifier ?
+                    ( !isLoggedIn ?
+                        <>
+                            <Button buttonText={ registerName } action={ registerAction }></Button>
+                            <Button buttonText={ loginName } action={ loginAction }></Button>
+                        </> :
+                        <AccountButton action={ accountClick } title={ title }></AccountButton>) : null
+                }
             </div>
         </header>
     );
