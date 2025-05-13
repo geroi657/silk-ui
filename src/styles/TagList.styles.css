@@ -1,0 +1,15 @@
+.TagList {
+    display: flex;
+    column-gap: 0.75rem;
+    width: fit-content;
+    padding: 0.75rem 1.5rem 0.75rem 1.5rem;
+    background-color: #cacaca;
+}
+
+.TagListNoTags {
+    all: unset;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #717171;
+}

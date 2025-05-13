@@ -1,0 +1,18 @@
+.TaskListContainer {
+    font-family: 'Montserrat', sans-serif;
+    max-width: 25rem;
+    height: 100%;
+    border: 2px solid #8D8D8D;
+    background-color: #BABABA;
+    overflow: hidden;
+}
+
+.TaskList {
+    position: relative;
+    max-height: 40rem;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scrollbar-color: #8D8D8D #aaaaaa;
+    scrollbar-width: thin;
+}

@@ -1,0 +1,52 @@
+.TaskListItem {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    padding: 1rem 1.375rem 1rem 1.375rem;
+    border-bottom: 2px solid #8D8D8D;
+}
+
+.TaskListItemTags {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 0.75rem;
+    row-gap: 0.75rem;
+}
+
+.TaskListItemTag, .TaskListItemName, .TaskListItemDescription, .TaskListItemResponsible {
+    all: unset;
+    overflow: hidden;
+    white-space: nowrap;
+    max-height: 1.375rem;
+    max-width: 94.5%;
+    text-overflow: ellipsis;
+    width: fit-content;
+    padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+}
+
+.TaskListItemTag {
+    font-size: 0.875rem;
+    background-color: #898989;
+    font-weight: 500;
+}
+
+.TaskListItemName, .TaskListItemDescription, .TaskListItemResponsible {
+    background-color: #A1A1A1;
+}
+
+.TaskListItemName {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.TaskListItemDescription {
+    font-weight: 500;
+    font-size: 0.75rem;
+}
+
+.TaskListItemResponsible {
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-top: 0.5rem;
+    margin-left: auto;
+}

@@ -1,0 +1,13 @@
+.TaskListName {
+    all: unset;
+    display: block;
+    padding: 0.875rem 0 0.875rem 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000000;
+    line-height: 1;
+    background-color: #898989;
+    border-bottom: 1px solid #8D8D8D;
+}

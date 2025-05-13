@@ -1,0 +1,12 @@
+.SideMenuItemName {
+    all: unset;
+    width: fit-content;
+    max-width: 91%;
+    padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    background-color: #979797;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
