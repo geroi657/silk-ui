@@ -1,5 +1,5 @@
-import TaskListName from "./TaskListName.tsx";
-import TaskListItem from "./TaskListItem.tsx";
+import TaskListName from "./TaskListName";
+import TaskListItem from "./TaskListItem";
 import "../styles/TaskList.styles.css"
 
 import type { TaskListProps } from "../types/TaskList.types.ts";

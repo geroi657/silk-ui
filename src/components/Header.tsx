@@ -1,6 +1,6 @@
-import HeaderTitle from "./HeaderTitle.tsx";
-import Button from "./Button.tsx";
-import AccountButton from "./AccountButton.tsx";
+import HeaderTitle from "./HeaderTitle";
+import Button from "./Button";
+import AccountButton from "./AccountButton";
 import type { HeaderProps } from "../types/Header.types.ts";
 import "../styles/Header.styles.css";
 

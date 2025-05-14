@@ -1,4 +1,4 @@
-import SideMenuItem from "./SideMenuItem.tsx";
+import SideMenuItem from "./SideMenuItem";
 import type { SideMenuProps } from "../types/SideMenu.types.ts";
 import "../styles/SideMenu.styles.css";
 

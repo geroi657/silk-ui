@@ -1,5 +1,5 @@
-import SideMenuItemDescription from "./SideMenuItemDescription.tsx";
-import SideMenuItemName from "./SideMenuItemName.tsx";
+import SideMenuItemDescription from "./SideMenuItemDescription";
+import SideMenuItemName from "./SideMenuItemName";
 import type { SideMenuItemProps } from "../types/SideMenuItem.types.ts";
 import "../styles/SideMenuItem.styles.css";
 

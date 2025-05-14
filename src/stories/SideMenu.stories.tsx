@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import SideMenu from "../components/SideMenu.tsx";
+import SideMenu from "../components/SideMenu";
 
 const meta : Meta = {
     title: 'SideMenu',

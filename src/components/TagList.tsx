@@ -1,4 +1,4 @@
-import Tag from "./TagListItem.tsx";
+import Tag from "./TagListItem";
 import type { tagList } from "../types/TagList.types.ts";
 import "../styles/TagList.styles.css";
 
