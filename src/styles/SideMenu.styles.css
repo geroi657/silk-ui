@@ -1,8 +1,8 @@
 .SideMenu {
     position: relative;
     width: 20rem;
+    height: 100%;
     max-width: 30rem;
-    height: 50rem;
     font-family: Montserrat, sans-serif;
     background-color: #C3C3C3;
     border-right: #5a5a5a solid 1px;

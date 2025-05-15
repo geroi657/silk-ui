@@ -1,7 +1,9 @@
 .TaskListContainer {
     font-family: 'Montserrat', sans-serif;
-    max-width: 25rem;
-    height: 100%;
+    width: 25rem;
+    flex-shrink: 0;
+    min-height: 10%;
+    height: fit-content;
     border: 2px solid #8D8D8D;
     background-color: #BABABA;
     overflow: hidden;

@@ -1,17 +1,18 @@
 {
   "compilerOptions": {
-    "declaration": true,
-    "declarationDir": "dist",
-    "emitDeclarationOnly": true,
-    "outDir": "dist",
-    "skipLibCheck": true,
-    "esModuleInterop": true,
     "target": "ESNext",
     "module": "ESNext",
-    "moduleResolution": "Node",
     "jsx": "react-jsx",
+    "declaration": true,
+    "declarationDir": "dist/types",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
     "strict": true,
-    "allowImportingTsExtensions": true
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "dist"
   },
   "include": ["src"],
   "exclude": ["node_modules", "dist", "src/stories"]

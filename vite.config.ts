@@ -1,29 +1,30 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import { fileURLToPath } from 'url';
-import path from 'node:path';
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import dts from "vite-plugin-dts";
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-// https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react(),
+    dts({ insertTypesEntry: true })
+  ],
   build: {
     lib: {
-      entry: path.resolve(__dirname, 'src/index.ts'),
-      name: 'SilkUI',
-      fileName: 'index',
-      formats: ['es', 'cjs']
+      entry: "src/index.ts",
+      name: "MyUILibrary",
+      fileName: "index",
+      formats: ["es", "cjs"]
     },
     rollupOptions: {
-      external: ['react', 'react-dom'],
+      external: ["react", "react-dom"],
       output: {
         globals: {
-          react: 'React',
-          'react-dom': 'ReactDOM'
-        }
+          react: "React",
+          "react-dom": "ReactDOM"
+        },
+        assetFileNames: "style.css"
       }
-    }
+    },
+    cssCodeSplit: true,
+    outDir: "dist"
   }
-})
+});

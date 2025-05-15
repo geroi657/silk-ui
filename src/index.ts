@@ -10,3 +10,17 @@ export { default as TagList } from './components/TagList';
 export { default as TagListItem } from './components/TagListItem';
 export { default as TaskList } from './components/TaskList';
 export { default as TaskListName } from './components/TaskListName';
+
+import './styles/AccountButton.styles.css';
+import './styles/Button.styles.css';
+import './styles/Header.styles.css';
+import './styles/HeaderTitle.styles.css';
+import './styles/SideMenu.styles.css';
+import './styles/SideMenuItem.styles.css';
+import './styles/SideMenuItemDescription.styles.css';
+import './styles/SideMenuItemName.styles.css';
+import './styles/TagList.styles.css';
+import './styles/TagListItem.styles.css';
+import './styles/TaskList.styles.css';
+import './styles/AccountButton.styles.css';
+import './styles/TaskListName.styles.css';
